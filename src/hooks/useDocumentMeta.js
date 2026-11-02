@@ -37,7 +37,7 @@ function setCanonical(href) {
  */
 export function useDocumentMeta({ title, description, image, path, noindex = false, type = "website" }) {
   useEffect(() => {
-    const fullTitle = title ? `${title} · ${SITE}` : `${SITE} — discover and watch films`;
+    const fullTitle = title ? `${title} · ${SITE}` : `${SITE} — Discover and watch films`;
     document.title = fullTitle;
     const url = path ? absoluteUrl(path) : null;
     setMeta("name", "description", description);

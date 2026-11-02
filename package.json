@@ -1,0 +1,56 @@
+{
+  "name": "movie-app",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://kleo2006.github.io/movie-app",
+  "dependencies": {
+    "@fontsource-variable/hanken-grotesk": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "hls.js": "^1.7.3",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.30.6",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "gh-pages": "^6.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "prebuild": "node scripts/check-env.js",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "lint": "eslint --ext .js,.jsx src",
+    "test:ci": "react-scripts test --watchAll=false",
+    "test:e2e": "node scripts/run-e2e.js",
+    "verify:source": "node scripts/verify-source.js",
+    "postbuild": "node scripts/postbuild.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

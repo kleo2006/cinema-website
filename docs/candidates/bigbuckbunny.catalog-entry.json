@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "titles": {
+    "10378": {
+      "status": "available",
+      "sources": [
+        { "src": "https://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4", "type": "mp4" }
+      ],
+      "license": {
+        "name": "CC BY 3.0",
+        "holder": "Blender Foundation | www.blender.org",
+        "url": "https://creativecommons.org/licenses/by/3.0/"
+      }
+    }
+  }
+}

@@ -1,0 +1,107 @@
+/*
+  Design tokens. Every colour, size and duration used in the app comes from here.
+  Palette idea: a projection booth — reel-black surfaces, bone-coloured type,
+  tungsten amber for actions, leader teal reserved for "playable in full".
+*/
+:root {
+  color-scheme: dark;
+
+  /* Surfaces */
+  --bg: #0c0d12;
+  --bg-raised: #11131a;
+  --surface: #151720;
+  --surface-2: #1c1f2b;
+  --surface-3: #252938;
+  --overlay: rgb(8 9 13 / 0.72);
+
+  /* Text */
+  --text: #ece7dc;
+  --text-muted: #a9a79f;
+  --text-faint: #7b7a76;
+  --text-on-accent: #1a1203;
+
+  /* Accents */
+  --accent: #f4a63a;
+  --accent-hover: #ffbb5c;
+  --accent-soft: rgb(244 166 58 / 0.14);
+  --playable: #46b3a6;
+  --playable-soft: rgb(70 179 166 / 0.16);
+  --danger: #ff7b6b;
+  --danger-soft: rgb(255 123 107 / 0.13);
+  --star: #f2c65c;
+
+  /* Borders */
+  --border: rgb(236 231 220 / 0.1);
+  --border-strong: rgb(236 231 220 / 0.22);
+
+  /* Typography */
+  --font-display: "Instrument Serif", "Iowan Old Style", Georgia, serif;
+  --font-body: "Hanken Grotesk Variable", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-md: 1rem;
+  --fs-lg: clamp(1.125rem, 1.05rem + 0.35vw, 1.3rem);
+  --fs-xl: clamp(1.5rem, 1.2rem + 1.2vw, 2.1rem);
+  --fs-2xl: clamp(2rem, 1.4rem + 2.4vw, 3.25rem);
+  --fs-hero: clamp(2.75rem, 1.5rem + 6vw, 6.5rem);
+
+  --lh-tight: 1.02;
+  --lh-snug: 1.25;
+  --lh-body: 1.6;
+
+  /* Spacing */
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 0.75rem;
+  --sp-4: 1rem;
+  --sp-5: 1.5rem;
+  --sp-6: 2rem;
+  --sp-7: 3rem;
+  --sp-8: 4.5rem;
+  --gutter: clamp(1rem, 0.4rem + 2.6vw, 3rem);
+
+  /* Layout */
+  --content-max: 1680px;
+  --reading-max: 62ch;
+  --header-h: 64px;
+  --touch: 44px;
+
+  /* Shape and depth */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-pill: 999px;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.5), 0 10px 24px -12px rgb(0 0 0 / 0.7);
+  --shadow-pop: 0 24px 60px -20px rgb(0 0 0 / 0.85);
+
+  /* Focus */
+  --focus-ring: 0 0 0 2px var(--bg), 0 0 0 4px var(--accent);
+
+  /* Stacking */
+  --z-header: 50;
+  --z-menu: 60;
+  --z-dialog: 80;
+  --z-toast: 100;
+
+  /* Motion */
+  --dur-fast: 120ms;
+  --dur: 220ms;
+  --dur-slow: 480ms;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Poster geometry */
+  --poster-ratio: 2 / 3;
+  --card-min: 150px;
+}
+
+/* Breakpoints are documented here because custom properties cannot be used in
+   media queries: 480 (large phone) · 720 (tablet) · 1024 (laptop) · 1440 (desktop) · 2000 (ultrawide) */
+
+@media (min-width: 720px) {
+  :root { --card-min: 170px; --header-h: 72px; }
+}
+@media (min-width: 1440px) {
+  :root { --card-min: 190px; }
+}

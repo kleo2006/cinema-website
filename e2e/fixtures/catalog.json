@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "titles": {
+    "9001": {
+      "status": "available",
+      "sources": [
+        { "src": "/media/film.mp4", "type": "mp4", "mime": "video/mp4", "codecs": "avc1.64000B, mp4a.40.2" },
+        { "src": "/media/film.webm", "type": "webm", "mime": "video/webm", "codecs": "vp9, opus" }
+      ],
+      "subtitles": [{ "src": "/media/en.vtt", "lang": "en", "label": "English" }],
+      "license": { "name": "Generated test asset", "holder": "Cinema project (ffmpeg test pattern)" }
+    },
+    "9002": { "status": "available", "sources": [{ "src": "/media/hls/master.m3u8", "type": "hls" }] },
+    "9003": { "status": "available", "sources": [{ "src": "/media/expired.mp4", "type": "mp4" }] },
+    "9004": { "status": "available", "sources": [{ "src": "/media/missing.mp4", "type": "mp4" }] },
+    "9005": { "status": "available", "sources": [{ "src": "javascript:alert(1)", "type": "mp4" }] },
+    "9006": { "status": "available", "expiresAt": "2020-01-01T00:00:00Z", "sources": [{ "src": "/media/film.mp4", "type": "mp4" }] },
+    "9007": { "status": "restricted", "sources": [{ "src": "/media/film.mp4", "type": "mp4" }] }
+  }
+}

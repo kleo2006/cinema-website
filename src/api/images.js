@@ -1,4 +1,5 @@
-const IMAGE_BASE = "https://image.tmdb.org/t/p";
+// Set REACT_APP_IMAGE_BASE_URL=/tmdb-img to serve artwork through your own domain (for networks that block image.tmdb.org).
+const IMAGE_BASE = (process.env.REACT_APP_IMAGE_BASE_URL || "https://image.tmdb.org/t/p").replace(/\/$/, "");
 
 const POSTER_WIDTHS = [154, 185, 342, 500, 780];
 const BACKDROP_WIDTHS = [300, 780, 1280];
